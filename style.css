@@ -1,0 +1,205 @@
+body {
+  margin: 50px 50px 0 50px;
+  background-color: #181136f7;
+  color: #fffffbf6;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column; 
+  min-height: 95vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.logo {
+  width: 180px;
+  margin-right: 7%;
+ float: right;
+}
+
+/* Header settings */
+h1 {
+  width: 100%;
+}
+/*
+h1 span {
+  padding: 0 1%;
+  
+}*/
+
+h1 span.big{
+  color: #74f6ffdf;
+  font-style: normal;
+  font-family: 'WindSong', cursive;
+  font-size: 6rem;
+  font-weight: 800;
+  margin-left: -1% !important;
+}
+
+h1 span.small {
+  font-size: 3rem;
+  color: #ffd484d5;
+}
+
+h1 {
+  width: 90%;
+  font-weight: 200;
+  /*font-style: italic; */
+  margin: 0 4%;
+}
+
+#header2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+#header3 {
+  text-align: right;
+}
+
+div.card.bottom {
+  float: right;
+  width: 100%;
+  text-align: right;
+  margin-top: 40px;
+}
+
+/* Card settings */
+.card {
+  margin-top: 60px;
+}
+
+.left.card {
+  margin-top: 20px;
+}
+
+.card-title {
+  margin-top: 0;
+  color: #bdf9fddf;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card p {
+  margin: 0;
+  font-size: 24px;
+  text-align: justify;
+}
+
+div.left {
+  float: left;
+}
+
+div.right {
+  float: right;
+}
+
+footer {
+  margin-right: 6%;
+  text-align: right;
+  color: #ffce74df;
+  font-style: italic;
+}
+
+
+/* --- ABOVE 680px --- */
+
+@media (min-width: 801px) {
+
+div.card.left, div.card.right {
+  width: 93%;
+}
+
+div.left {
+  text-align: right;
+}
+
+.tile-image {
+  float: left;
+  margin: 0 0px 0px 40px;
+  padding-top: 0px;
+  width: 35%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0 15% 10% 0%;
+}
+
+.left .tile-image {
+  float: right;
+  border-radius: 0 10% 10% 0%;
+}
+
+.left p {
+  padding: 0 8%;
+  width: 90%;
+}
+
+.right .tile-image {
+  margin: 0 40px 0px 0px;
+  border-radius: 10% 0 0% 10%;
+}
+
+.right p {
+  padding: 0 7%;
+}
+
+}
+
+
+/* --- 680px AND BELOW --- */
+
+@media (max-width: 800px) {
+.logo {
+  width: 160px;
+  margin-left: 0 !important;
+}
+
+
+/* header settings */
+h1 {
+  margin: 0;
+  width: 100%;
+}
+
+h1 span.small {
+  font-size: 2rem;
+}
+
+h1 span.big {
+  font-style: normal;
+  font-size: 5rem;
+  margin: 5px;
+}
+
+#header2 {
+  margin-top: 60px;
+}
+
+
+/* card settings */
+.card {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+div.card.bottom {
+  margin-top: 3%;
+}
+
+.tile-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-title {
+  margin-top: 1%;
+  font-size: 26px;
+}
+
+}
+
